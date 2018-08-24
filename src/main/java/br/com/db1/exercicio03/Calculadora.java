@@ -1,38 +1,14 @@
 package br.com.db1.exercicio03;
 
 public class Calculadora {
-	private Double resultado, primeiroValor, segundoValor;
+	private Double resultado;
 	
 public Calculadora(){
-		
-	}
-
-	public Double getResultado() {
-		return resultado;
-	}
-
-	public void setResultado(Double resultado) {
-		this.resultado = resultado;
-	}
-
-	public Double getPrimeiroValor() {
-		return primeiroValor;
-	}
-
-	public void setPrimeiroValor(Double primeiroValor) {
-		this.primeiroValor = primeiroValor;
-	}
-
-	public Double getSegundoValor() {
-		return segundoValor;
-	}
-
-	public void setSegundoValor(Double segundoValor) {
-		this.segundoValor = segundoValor;
+		zerarCalculo();
 	}
 	
-	public void zerarCalculo(Double resultado){
-		resultado = (double) 0;
+	public void zerarCalculo(){
+		resultado = 0d;
 	}
 	public void somar(Double primeiroValor, Double segundoValor){
 		resultado = primeiroValor + segundoValor;
