@@ -1,10 +1,17 @@
 package br.com.db1.exercicio04;
 
+import br.com.db1.exercicio04.Sexo;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+
 public class Pessoa {
+	
+	private String nome;
+	
+	private Date dataNascimento;
 	
 	private Sexo sexo;
 	
@@ -29,10 +36,6 @@ public class Pessoa {
 	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
 	}
-
-	private String nome;
-	
-	private Date dataNascimento;
 
 	public String getNome() {
 		return nome;

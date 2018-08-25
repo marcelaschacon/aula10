@@ -7,11 +7,12 @@ public enum Sexo {
 		
 	private String sexo;
 	
-	Sexo(String sexo){
-		this.sexo = sexo;
-	}
 	public String sexo(){
 		return sexo;
+	}
+	
+	Sexo(String sexo){
+		this.sexo = sexo;
 	}
 
 }

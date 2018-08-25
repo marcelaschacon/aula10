@@ -7,6 +7,11 @@ public class Celular {
 	private Boolean dualChip;
 	
 	private Double tamanhoTela;
+	
+	public boolean temSinal(){
+		return Boolean.TRUE;
+	
+	}	
 
 	public String getOperadora() {
 		return operadora;
@@ -40,8 +45,4 @@ public class Celular {
 		this.tamanhoTela = tamanhoTela;
 	}
 
-	public boolean temSinal(){
-		return true;
-	
-	}	
 }

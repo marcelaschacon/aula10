@@ -5,7 +5,22 @@ public class Endereco extends Restaurante{
 	private String logradouro;
 	
 	private Integer cep;
+	
+	private TipoLogradouro tipoLogradouro;
 
+	public String exibirCepFormatado(){
+		String temp = Integer.toString(cep);
+		return temp.substring(0, 5) + "-" + temp.substring(5);
+	}
+	
+	public TipoLogradouro getTipoLogradouro() {
+		return tipoLogradouro;
+	}
+	
+	public void setTipoLogradouro(TipoLogradouro tipoLogradouro){
+		this.tipoLogradouro = tipoLogradouro;
+	}
+	
 	public String getLogradouro() {
 		return logradouro;
 	}
@@ -22,7 +37,4 @@ public class Endereco extends Restaurante{
 		this.cep = cep;
 	}
 	
-	public String exibirCepFormatado(){
-		 
-	}
 }

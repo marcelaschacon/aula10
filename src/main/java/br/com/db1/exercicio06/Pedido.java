@@ -7,7 +7,13 @@ public class Pedido extends Restaurante{
 	private Integer numero, numeroMesa;
 	
 	private Date dataPedido;
-
+	
+	public void cadastrarPedido(){
+		
+	}
+	public void fecharPedido(){
+		
+	}
 	public Integer getNumero() {
 		return numero;
 	}
@@ -32,10 +38,4 @@ public class Pedido extends Restaurante{
 		this.dataPedido = dataPedido;
 	}
 	
-	public void cadastrarPedido(){
-		
-	}
-	public void fecharPedido(){
-		
-	}
 }

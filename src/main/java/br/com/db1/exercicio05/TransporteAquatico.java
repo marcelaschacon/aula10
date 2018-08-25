@@ -3,6 +3,10 @@ package br.com.db1.exercicio05;
 public class TransporteAquatico {
 
 	private String nome;
+	
+	public String getNomeMetodo(){
+		return nome;
+	}
 
 	public String getNome() {
 		return nome;
@@ -12,7 +16,4 @@ public class TransporteAquatico {
 		this.nome = nome;
 	}
 	
-	public String getNomeMetodo(){
-		return nome;
-	}
 }

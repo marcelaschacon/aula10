@@ -3,7 +3,11 @@ package br.com.db1.exercicio04;
 public class Telefone extends Pessoa{
 
 	private Integer ddd, numero;
-
+	
+	public String exibirTelefoneFormatado(){
+		return "(" + ddd + ")" + numero;
+	}
+	
 	public Integer getDdd() {
 		return ddd;
 	}
@@ -20,8 +24,5 @@ public class Telefone extends Pessoa{
 		this.numero = numero;
 	}
 	
-	public String exibirTelefoneFormatado(){
-		return "(" + ddd + ")" + numero;
-	}
 	
 }

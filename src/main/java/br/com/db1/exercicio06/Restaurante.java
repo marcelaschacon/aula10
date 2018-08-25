@@ -1,5 +1,7 @@
 package br.com.db1.exercicio06;
 
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Restaurante {
@@ -7,6 +9,37 @@ public class Restaurante {
 	private String nome;
 	
 	private Boolean serveAlmoco, serveJantar, serveCafeDaManha;
+	
+	private Endereco endereco;
+	
+	private List<Telefone> telefones;
+	
+	private List<Pedido> pedidos;
+	
+	public Restaurante() {
+		telefones = new ArrayList<Telefone>();
+		pedidos = new ArrayList<Pedido>();
+	}
+
+	public List<Telefone> getTelefones() {
+		return telefones;
+	}
+
+	public void addTelefones(Telefone telefones) {
+		this.telefones.add(telefones);
+	}
+
+	public List<Pedido> getPedidos() {
+		return pedidos;
+	}
+
+	public void addPedidos(Pedido pedidos) {
+		this.pedidos.add(pedidos);
+	}
+	
+public void gerarRelatorioFaturamento(Date dataInicial, Date dataFinal){
+		
+	}
 
 	public String getNome() {
 		return nome;
@@ -40,7 +73,4 @@ public class Restaurante {
 		this.serveCafeDaManha = serveCafeDaManha;
 	}
 	
-	public void gerarRelatorioFaturamento(Date dataInicial, Date dataFinal){
-		
-	}
 }
