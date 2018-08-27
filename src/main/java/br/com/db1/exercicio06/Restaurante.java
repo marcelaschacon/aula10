@@ -4,13 +4,15 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Date;
 
+import br.com.db1.exercicio08.Endereco;
+
 public class Restaurante {
 
 	private String nome;
 	
 	private Boolean serveAlmoco, serveJantar, serveCafeDaManha;
 	
-	private Endereco endereco;
+	private List <Endereco> enderecos;
 	
 	private List<Telefone> telefones;
 	
@@ -19,22 +21,6 @@ public class Restaurante {
 	public Restaurante() {
 		telefones = new ArrayList<Telefone>();
 		pedidos = new ArrayList<Pedido>();
-	}
-
-	public List<Telefone> getTelefones() {
-		return telefones;
-	}
-
-	public void addTelefones(Telefone telefones) {
-		this.telefones.add(telefones);
-	}
-
-	public List<Pedido> getPedidos() {
-		return pedidos;
-	}
-
-	public void addPedidos(Pedido pedidos) {
-		this.pedidos.add(pedidos);
 	}
 	
 public void gerarRelatorioFaturamento(Date dataInicial, Date dataFinal){
@@ -73,4 +59,28 @@ public void gerarRelatorioFaturamento(Date dataInicial, Date dataFinal){
 		this.serveCafeDaManha = serveCafeDaManha;
 	}
 	
+	public List<Endereco> getEnderecos() {
+		return enderecos;
+	}
+	
+	public void addEndereco(Endereco endereco) {
+		this.enderecos.add(endereco);
+	}
+	
+	public List<Telefone> getTelefones() {
+		return telefones;
+	}
+
+	public void addTelefones(Telefone telefones) {
+		this.telefones.add(telefones);
+	}
+
+	public List<Pedido> getPedidos() {
+		return pedidos;
+	}
+
+	public void addPedidos(Pedido pedidos) {
+		this.pedidos.add(pedidos);
+	}
 }
+
